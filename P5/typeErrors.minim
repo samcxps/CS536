@@ -1,0 +1,125 @@
+bool bbb;
+
+struct S { int a; };
+struct S t;
+
+void f(int p1, bool p2) {
+}
+
+//* Bad return value
+int f1() {
+  bool a;
+  return a;
+}
+
+//* Bad return value
+bool f2() {
+  int a;
+  return a;
+}
+
+//* Return with value in void function
+void f8() {
+  int a;
+  return a;
+}
+
+void f3(int a) {
+
+}
+
+//* Return value missing
+int f4() {
+  int a;
+
+  return;
+}
+
+void stuff() {
+  int a;
+  bool b;
+  bool c;
+
+  //* Write attempt of ...
+  disp << f2; 
+  disp << S;
+  disp << t;
+  disp << f2();
+  
+  //*	Read attempt of...
+  input >> f2;
+  input >> S;
+  input >> t;
+  
+  //* Call attempt on non-function
+  a();
+
+  //* Function call with wrong # of args
+  f3(1, 2);
+
+  //* Actual type and formal type do not match
+  f3(true);
+
+  //*	Arithmetic operator with non-numeric operand (+, -, *, /) ++ --
+  a = 5;
+
+  a = a + true;
+  a = true + a;
+  a = a - true;
+  a = true - a;
+  a = a * true;
+  a = true * a;
+  a = a / true;
+  a = true / a;
+
+  b++;
+  b--;
+
+  //* Relational operator with non-numeric operand
+  c = a > true;
+  c = true > a;
+  c = a < true;
+  c = true < a;
+  c = a >= true;
+  c = true >= a;
+  c = a <= true;
+  c = true <= a;
+
+}
+
+
+void main() {
+    int aaa;
+
+    //* some errors involving illegal operations on functions
+    aaa = f + f;
+    bbb = f == 3;
+    bbb = f > main;
+    bbb = f == f;
+
+    //* some errors involving bad function calls 
+    aaa();
+    f();
+    f(5);
+    f(aaa, aaa);
+    f(t, t.a);
+    S();
+
+    //* some errors involving structs 
+    t = 5;
+    t = t;
+    input >> S;
+    t = true || 3;
+    bbb = S && t.a;
+
+    //* error involving return
+    return 10;
+
+    //* other type errors 
+    aaa = aaa + (!false);
+    aaa = aaa + "foo";
+    bbb = aaa;
+
+    //* don't give too many or too few error messages here 
+    bbb = (aaa + true) && (bbb < true);
+}

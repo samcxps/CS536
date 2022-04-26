@@ -1,0 +1,93 @@
+
+struct Point {
+	int x;
+	int y;
+};
+
+struct Color {
+	int r;
+	int g;
+	int b;
+};
+
+struct ColorPoint {
+	struct Color color;
+	struct Point point;
+};
+
+
+
+//* A variable inside a struct with the same name as a variable/function outside the struct is legal.
+int x;
+
+struct aStruct {
+	int x;
+};
+
+//* A struct and one of its fields can have the same name.
+struct aStruct2 {
+	int aStruct2;
+};
+
+//* A function and one of its formals can have the same name
+void super(int super) { }
+
+
+//* A function and one of its local vars can have the same name
+void cool() {
+	int cool;
+}
+
+//* Nested structs
+struct Struct1 {
+	int x;
+	int y;
+};
+
+struct Struct2 {
+	struct Struct1 nested;
+};
+
+//* Struct dot access
+void access() {
+	struct Struct1 s1;
+	
+	s1.x = 4;
+	s1.y = 4;
+}
+
+//* Nested struct dot access
+void access2() {
+	struct Struct2 s2;
+	
+	s2.nested.x = 2;
+}
+
+//* P4 writeup example stuff
+int f(int x, bool b) { }
+void g() {
+    int a;
+    bool b;
+    struct Point p;
+    p.x = a;
+    b = a == 3;
+    f(a + p.y*2, b);
+    g();
+}
+
+//* Stuff
+void h() {
+	struct Point pt;
+	struct Color red;
+	struct ColorPoint cpt;
+	
+	pt.x = 7;
+	pt.y = 8;
+	
+	red.r = 255;
+	red.g = 0;
+	red.b = 0;
+	
+	cpt.point.x = pt.x;
+	
+}

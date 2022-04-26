@@ -1,0 +1,64 @@
+struct structDecl {
+    bool aBoolean;
+    int anInt;
+};
+bool boolFunctionDecl() {
+    return true;
+}
+int intFunctionDecl() {
+    bool aBooleanDecl;
+    int anIntDecl;
+    void aVoidDecl;
+    aBooleanDecl = true;
+    aBooleanDecl2 = false;
+    anIntDecl = 0;
+    anIntDecl++;
+    anIntDecl--;
+    >>aBooleanDecl;
+    <<aBooleanDecl;
+    if ((b == (-1))) {
+        x = ((4 + (3 * 5)) - y);
+        while (c) {
+            y = ((y * 2) + x);
+        }
+    }
+    else {
+        x = 0;
+    }
+    if ((b == (-1))) {
+        x = ((4 + (3 * 5)) - y);
+        while (c) {
+            y = ((y * 2) + x);
+        }
+    }
+    while (aBooleanDecl) {
+        anInt = (anInt + ((2 * 9) / 30));
+    }
+    aBooleanDecl = boolFunctionDecl();
+    return anIntDecl;
+}
+void voidFunctionDecl() {
+    bool aBooleanDecl;
+    bool aBooleanDecl2;
+    bool aBooleanDecl3;
+    int anIntDecl;
+    int anIntDecl2;
+    int anIntDecl3;
+    anIntDecl3 = (anIntDecl + anIntDecl2);
+    anIntDecl3 = (anIntDecl - anIntDecl2);
+    anIntDecl3 = (anIntDecl * anIntDecl2);
+    aBooleanDecl = true;
+    aBooleanDecl2 = true;
+    aBooleanDecl = (!aBooleanDecl2);
+    aBooleanDecl3 = false;
+    aBooleanDecl = (aBooleanDecl2 && aBooleanDecl3);
+    aBooleanDecl = (aBooleanDecl2 == aBooleanDecl3);
+    aBooleanDecl = (aBooleanDecl2 != aBooleanDecl3);
+    aBooleanDecl = (anIntDecl == anIntDecl2);
+    aBooleanDecl = (anIntDecl != anIntDecl2);
+    aBooleanDecl = (anIntDecl < anIntDecl2);
+    aBooleanDecl = (anIntDecl > anIntDecl2);
+    aBooleanDecl = (anIntDecl >= anIntDecl2);
+    aBooleanDecl = (anIntDecl <= anIntDecl2);
+    anIntDecl2 = (anIntDecl2 - anIntDecl3);
+}

@@ -1,0 +1,140 @@
+struct Point {
+  int x;
+  int y;
+};
+
+int f1(int a) {
+  int b;
+
+  a = b;
+
+  return a;
+}
+
+bool f2(bool a) {
+  bool b;
+
+  b = a;
+
+  return b;
+}
+
+void f3(int a, int b) {
+  int c;
+  int d;
+
+  bool e;
+  bool f;
+
+  c = 5;
+  d = 5;
+  c++;
+  c--;
+
+  e = true;
+  f = false;
+
+  c = d;
+  c = c + d;
+  c = c - d;
+  c = c / d;
+  c = c * d;
+
+  c = c + 1;
+  c = 1 + c;
+  c = 1 + 1;
+
+  c = c - 1;
+  c = 1 - c;
+  c = 1 - 1;
+  
+  c = c / 1;
+  c = 1 / c;
+  c = 1 / 1;
+
+  c = c * 1;
+  c = 1 * c;
+  c = 1 * 1;
+
+  e = f;
+  
+  e = !e;
+  e = !false;
+  e = !true;
+
+  e = e && true;
+  e = e && false;
+  e = true && f;
+  e = false && f;
+
+  e = e || true;
+  e = e || false;
+  e = true || f;
+  e = false || f;
+
+  e = 1 < c;
+  e = c < 1;
+  e = 1 < 1;
+  e = c < c;
+
+  e = 1 > c;
+  e = c > 1;
+  e = 1 > 1;
+  e = c > c;
+
+  e = 1 <= c;
+  e = c <= 1;
+  e = 1 <= 1;
+  e = c <= c;
+
+  e = 1 >= c;
+  e = c >= 1;
+  e = 1 >= 1;
+  e = c >= c;
+
+  disp << c;
+  disp << e;
+
+  input >> c;
+  input >> e;
+
+  c = f1(d);
+  e = f2(f);
+
+  c = f1(3);
+  e = f2(false);
+
+  if (c == d) { }
+  if (c == 1) { }
+  if (1 == c) { }
+  if (1 == 1) { }
+
+  if (e == f) { } else { }
+  if (e == true) { } else { }
+  if (e == false) { } else { }
+  if (true == f) { } else { }
+  if (false == f) { } else { }
+  if (true == true) { } else { }
+  if (true == false) { } else { }
+  if (false == true) { } else { }
+  if (false == false) { } else { }
+
+  while (e == f) { }
+  while (e == true) { }
+  while (e == false) { }
+  while (true == f) { }
+  while (false == f) { }
+  while (true == true) { }
+  while (true == false) { }
+  while (false == true) { }
+  while (false == false) { }
+}
+
+void f4() {
+  struct Point p;
+
+  disp << p.x;
+  input >> p.x;
+  disp << p.y;
+  input >> p.y;
+}

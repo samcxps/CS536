@@ -1,0 +1,153 @@
+struct Point{
+    int x;
+    int y;
+};
+
+int f1(int a) {
+    int b;
+    a(int) = b(int);
+    return a(int);
+}
+
+bool f2(bool a) {
+    bool b;
+    b(bool) = a(bool);
+    return b(bool);
+}
+
+void f3(int a, int b) {
+    int c;
+    int d;
+    bool e;
+    bool f;
+    c(int) = 5;
+    d(int) = 5;
+    c(int)++;
+    c(int)--;
+    e(bool) = true;
+    f(bool) = false;
+    c(int) = d(int);
+    c(int) = (c(int) + d(int));
+    c(int) = (c(int) - d(int));
+    c(int) = (c(int) / d(int));
+    c(int) = (c(int) * d(int));
+    c(int) = (c(int) + 1);
+    c(int) = (1 + c(int));
+    c(int) = (1 + 1);
+    c(int) = (c(int) - 1);
+    c(int) = (1 - c(int));
+    c(int) = (1 - 1);
+    c(int) = (c(int) / 1);
+    c(int) = (1 / c(int));
+    c(int) = (1 / 1);
+    c(int) = (c(int) * 1);
+    c(int) = (1 * c(int));
+    c(int) = (1 * 1);
+    e(bool) = f(bool);
+    e(bool) = (!e(bool));
+    e(bool) = (!false);
+    e(bool) = (!true);
+    e(bool) = (e(bool) && true);
+    e(bool) = (e(bool) && false);
+    e(bool) = (true && f(bool));
+    e(bool) = (false && f(bool));
+    e(bool) = (e(bool) || true);
+    e(bool) = (e(bool) || false);
+    e(bool) = (true || f(bool));
+    e(bool) = (false || f(bool));
+    e(bool) = (1 < c(int));
+    e(bool) = (c(int) < 1);
+    e(bool) = (1 < 1);
+    e(bool) = (c(int) < c(int));
+    e(bool) = (1 > c(int));
+    e(bool) = (c(int) > 1);
+    e(bool) = (1 > 1);
+    e(bool) = (c(int) > c(int));
+    e(bool) = (1 <= c(int));
+    e(bool) = (c(int) <= 1);
+    e(bool) = (1 <= 1);
+    e(bool) = (c(int) <= c(int));
+    e(bool) = (1 >= c(int));
+    e(bool) = (c(int) >= 1);
+    e(bool) = (1 >= 1);
+    e(bool) = (c(int) >= c(int));
+    cout << c(int);
+    cout << e(bool);
+    cin >> c(int);
+    cin >> e(bool);
+    c(int) = f1(int->int)(d(int));
+    e(bool) = f2(bool->bool)(f(bool));
+    c(int) = f1(int->int)(3);
+    e(bool) = f2(bool->bool)(false);
+    if ((c(int) == d(int))) {
+    }
+    if ((c(int) == 1)) {
+    }
+    if ((1 == c(int))) {
+    }
+    if ((1 == 1)) {
+    }
+    if ((e(bool) == f(bool))) {
+    }
+    else {
+    }
+    if ((e(bool) == true)) {
+    }
+    else {
+    }
+    if ((e(bool) == false)) {
+    }
+    else {
+    }
+    if ((true == f(bool))) {
+    }
+    else {
+    }
+    if ((false == f(bool))) {
+    }
+    else {
+    }
+    if ((true == true)) {
+    }
+    else {
+    }
+    if ((true == false)) {
+    }
+    else {
+    }
+    if ((false == true)) {
+    }
+    else {
+    }
+    if ((false == false)) {
+    }
+    else {
+    }
+    while ((e(bool) == f(bool))) {
+    }
+    while ((e(bool) == true)) {
+    }
+    while ((e(bool) == false)) {
+    }
+    while ((true == f(bool))) {
+    }
+    while ((false == f(bool))) {
+    }
+    while ((true == true)) {
+    }
+    while ((true == false)) {
+    }
+    while ((false == true)) {
+    }
+    while ((false == false)) {
+    }
+}
+
+void f4() {
+    struct Point p;
+    cout << p(Point).x(int);
+    cin >> p(Point).x(int);
+    cout << p(Point).y(int);
+    cin >> p(Point).y(int);
+}
+

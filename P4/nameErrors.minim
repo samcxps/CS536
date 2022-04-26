@@ -1,0 +1,48 @@
+
+
+//* variable or a function with the same name has been declared in the same scope before
+//* Should throw identifier multiply declared
+void a() { }
+struct a {
+	int x;
+};
+
+//* variable x inside a struct with the same name as another variable inside the struct is illegal.
+//* Should throw identifier multiply declared
+struct b {
+	int a;
+	int a;
+};
+
+//* struct is used without declaration like a.b
+//* Should throw identifier multiply declared and dot access of non struct type
+void c() {
+	undeclared.x = 5;
+}
+
+//* function with the same name as another function in the same scope is illegal
+//* Should throw identifier multiply declared
+void d() { }
+int d() { }
+
+//* A function with the same name as another variable in the same scope is illegal
+//* Should throw identifier multiply declared
+int e;
+void e() { }
+
+//* function with formal parameter a also has a variable declared as a
+//* Should throw identifier multiply declared
+void f(int a) {
+	int a;
+}
+
+//* a function has 2 formal parameters with the same name
+//* Should throw identifier multiply declared
+void g(int a, int a) { }
+
+//* a function has 2 local vars with the same name
+//* Should throw identifier multiply declared
+void h() { 
+	int a;
+	int a;
+}

@@ -1,0 +1,77 @@
+struct Point{
+    int x;
+    int y;
+};
+
+struct Color{
+    int r;
+    int g;
+    int b;
+};
+
+struct ColorPoint{
+    struct Color color;
+    struct Point point;
+};
+
+int x;
+struct aStruct{
+    int x;
+};
+
+struct aStruct2{
+    int aStruct2;
+};
+
+void super(int super) {
+}
+
+void cool() {
+    int cool;
+}
+
+struct Struct1{
+    int x;
+    int y;
+};
+
+struct Struct2{
+    struct Struct1 nested;
+};
+
+void access() {
+    struct Struct1 s1;
+    (s1(Struct1)).x(int) = 4;
+    (s1(Struct1)).y(int) = 4;
+}
+
+void access2() {
+    struct Struct2 s2;
+    ((s2(Struct2)).nested(Struct1)).x(int) = 2;
+}
+
+int f(int x, bool b) {
+}
+
+void g() {
+    int a;
+    bool b;
+    struct Point p;
+    (p(Point)).x(int) = a(int);
+    b(bool) = (a(int) == 3);
+    f(int,bool->int)((a(int) + ((p(Point)).y(int) * 2)), b(bool));
+    g(->void)();
+}
+
+void h() {
+    struct Point pt;
+    struct Color red;
+    struct ColorPoint cpt;
+    (pt(Point)).x(int) = 7;
+    (pt(Point)).y(int) = 8;
+    (red(Color)).r(int) = 255;
+    (red(Color)).g(int) = 0;
+    (red(Color)).b(int) = 0;
+    ((cpt(ColorPoint)).point(Point)).x(int) = (pt(Point)).x(int);
+}
+
